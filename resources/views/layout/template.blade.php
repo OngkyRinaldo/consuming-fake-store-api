@@ -20,11 +20,11 @@
 
 <body>
 
-    <head>
+    <header>
         {{-- navbar --}}
         <x-navbar />
         {{-- end navbar --}}
-    </head>
+    </header>
 
     <main>
         @yield('content')
