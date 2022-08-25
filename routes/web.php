@@ -14,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', [PageController::class, 'index']);
+Route::get('', [PageController::class, 'index'])->name('index');
+Route::get('electronics', [PageController::class, 'electronics'])->name('pages.electronics');
+Route::get('jewelery', [PageController::class, 'jewelery'])->name('pages.jewelery');
+Route::get('men', [PageController::class, 'men'])->name('pages.men');
+Route::get('women', [PageController::class, 'women'])->name('pages.women');
