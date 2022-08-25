@@ -1,5 +1,10 @@
 @extends('layout.template')
 
+@section('title')
+- Women's Clothing
+@endsection
+
+
 @section('content')
 <section>
     <div class="container">

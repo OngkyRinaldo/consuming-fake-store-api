@@ -15,7 +15,7 @@
 
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <title>Fake Store</title>
+    <title>Fake Store @yield('title')</title>
 </head>
 
 <body>

@@ -1,5 +1,9 @@
 @extends('layout.template')
 
+@section('title')
+- Jewelery
+@endsection
+
 @section('content')
 <section>
     <div class="container">

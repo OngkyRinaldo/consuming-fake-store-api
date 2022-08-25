@@ -1,5 +1,9 @@
 @extends('layout.template')
 
+@section('title')
+- Electronics
+@endsection
+
 @section('content')
 <section>
     <div class="container">
