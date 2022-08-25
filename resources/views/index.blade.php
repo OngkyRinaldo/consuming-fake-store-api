@@ -113,18 +113,17 @@
         <section>
             <div class="container">
                 <div class="category-title py-5 px-10">
-                    <h5 class="text-center">All Product</h5>
+                    <h5 class="text-center fs-2">All Product</h5>
                 </div>
-                <div class="row card-index">
+                <div class="row">
                     @foreach ($datas as $data)
                     <div class="col-lg-3 col-md-4 col-6 mt-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{ $data->image }}" class="card-img-top" alt="{{ $data->title }}">
+                        <div class="card card-index" style="width: 18rem;">
+                            <img src="{{ $data->image }}" class="card-img-top p-3" alt="{{ $data->title }}">
                             <div class="card-body">
-                                <h5 class="card-title">{{ $data->title }}</h5>
-                                <p class="card-text">{{ $data->description }}</p>
-                                <p class="card-text">{{ $data->price }}</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">{{Str::limit($data->title, 35) }}</h5>
+                                <p class="card-text"> <strong>Price : </strong> ${{ $data->price }}</p>
+                                <a href="#" class="btn btn-success d-grid">Buy</a>
                             </div>
                         </div>
                     </div>
@@ -134,6 +133,27 @@
         </section>
 
     </main>
+
+    <footer>
+        <section id="footer">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3">
+                        <a class="mx-1 mt-2" href="https://twitter.com/OngkyRinaldo" target="_blank"><img
+                                src="{{ asset('assets/icons/twitter.png') }}" alt="twitter_icons.png"
+                                class="img-footer"></i></a>
+                        <a class="mx-1 mt-2" href="https://www.linkedin.com/in/ongkyrinaldo/" target="_blank"><img
+                                src="{{ asset('assets/icons/linkedin.png') }}" alt="linkedin_icons.png"
+                                class="img-footer"></i></a>
+
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy; <strong>Ongky Rinaldo</strong> 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
