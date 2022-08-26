@@ -41,3 +41,17 @@ footer {
     width: 50px;
 }
 /* end Footer */
+
+/* mobile */
+@media screen and (max-width: 994px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .col-card-index {
+        width: 300px;
+        margin: 0 40px;
+        /* margin-left: 40px; */
+    }
+}
+/* end mobile */
