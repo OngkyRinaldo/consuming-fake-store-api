@@ -19,3 +19,4 @@ Route::get('electronics', [PageController::class, 'electronics'])->name('pages.e
 Route::get('jewelery', [PageController::class, 'jewelery'])->name('pages.jewelery');
 Route::get('men', [PageController::class, 'men'])->name('pages.men');
 Route::get('women', [PageController::class, 'women'])->name('pages.women');
+Route::get('show/{id}', [PageController::class, 'show'])->name('pages.show');

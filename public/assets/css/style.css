@@ -54,3 +54,46 @@ footer {
     }
 }
 /* end mobile */
+
+/* pages show */
+
+/* breadcrumb */
+.breadcrumb {
+    background-color: #fff;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+/* end breadcrumb */
+
+/* figure */
+
+.figure img {
+    border-radius: 5px;
+    width: 450px;
+    height: 400px;
+}
+
+hr {
+    border: 2px solid #2d2d2d;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.category-item {
+    color: #566ffd;
+}
+
+.btn-product a {
+    font-size: 14px;
+    border: 1px solid #198754;
+    padding: 15px;
+}
+.btn-product a:hover {
+    border: 1px solid #198754;
+}
+/* end figure */
+
+/* end pages show */

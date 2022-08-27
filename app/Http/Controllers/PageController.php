@@ -59,4 +59,18 @@ class PageController extends Controller
 
         return view('pages.women', compact('datas'));
     }
+
+    public function show($id)
+    {
+        $client = new Client();
+
+        $response = $client->request(
+            'get',
+            'https://fakestoreapi.com/products/' . $id
+        );
+
+        $data = json_decode($response->getBody()->getContents());
+
+        return view('pages.show', compact('data'));
+    }
 }
