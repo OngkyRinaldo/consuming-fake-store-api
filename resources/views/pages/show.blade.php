@@ -54,3 +54,7 @@
     <!-- end single-product -->
 </main>
 @endsection
+
+@section('js')
+<script src="{{ asset('assets/js/script.js') }}"></script>
+@endsection
