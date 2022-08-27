@@ -18,7 +18,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{Str::limit($data->title, 35) }}</h5>
                         <p class="card-text"> <strong>Price : </strong> ${{ $data->price }}</p>
-                        <a href="#" class="btn btn-success d-grid">Buy</a>
+                        <a href="{{ route('pages.show', $data->id) }}" class="btn btn-success d-grid">Buy</a>
                     </div>
                 </div>
             </div>
