@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', [PageController::class, 'index'])->name('index');
-Route::get('electronics', [PageController::class, 'electronics'])->name('pages.electronics');
-Route::get('jewelery', [PageController::class, 'jewelery'])->name('pages.jewelery');
-Route::get('men', [PageController::class, 'men'])->name('pages.men');
-Route::get('women', [PageController::class, 'women'])->name('pages.women');
-Route::get('show/{id}', [PageController::class, 'show'])->name('pages.show');
+
+Route::controller(PageController::class)->group(function () {
+    Route::get('', 'index')->name('index');
+    Route::get('electronics', 'electronics')->name('pages.electronics');
+    Route::get('jewelery', 'jewelery')->name('pages.jewelery');
+    Route::get('men', 'men')->name('pages.men');
+    Route::get('women', 'women')->name('pages.women');
+    Route::get('show/{id}', 'show')->name('pages.show');
+});
